@@ -19,9 +19,9 @@ function calculadora() {
     }
     var ask = prompt("Sair?").toLowerCase();
     if (ask === "sim") {
-        return;
+      return;
     } else {
-        calculadora();
+      calculadora();
     }
   }
 }

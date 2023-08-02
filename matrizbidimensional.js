@@ -1,7 +1,13 @@
+const array_animals = Array();
 
-let animals = [
-    ["Leão" , "Mamífero", 5]
-    ["Sapo", "anfíbio", 2]
-    ["Cobra", "Réptil", 2]
-    ["Tubarão", "Peixe", 4]
-];
+  array_animals.push(
+  ["Leão", "Mamífero", 5],
+  ["Cachorro", "Mamífero", 4],
+  ["Sapo", "Anfíbio", 1]
+    
+  )
+array_animals.forEach(element => console.log(element));
+
+
+
+

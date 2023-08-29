@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Recife</title>
+  </head>
+  <header>
+    <div class="topnav">
+        <a class="active" href="#home">Início</a>
+        <a href="#sobre">Marco Zero</a>
+        <!-- <a>Lugares que mais gosto</a> será aplicado na próxima atividade -->
+      </div>
+  </header>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/recife1.webp" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/recife2.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/recife22.jpg" style="width: 100%" />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div id="sobre">
+      <h1>Marco Zero</h1>
+      <p>
+        O Marco Zero no Recife Antigo é um dos pontos turísticos mais
+        importantes para quem deseja conhecer a capital de Pernambuco. Isso
+        porque é um local de importância histórica que conta o nascimento da
+        cidade e possui forte referência cultural. Além disso, o Marco Zero
+        recebe, anualmente, diversas comemorações e manifestações e também é um
+        lugar muito famoso para quem busca eventos como o Carnaval. Por isso, o
+        Assistente de Viagem preparou esse artigo exclusivo para contar tudo
+        sobre o Marco Zero no Recife Antigo e quais as melhores dicas para
+        conhecer por lá.
+      </p>
+      <h2>A história do Marco Zero no Recife Antigo</h2>
+      <p>
+        O Marco Zero no Recife Antigo é o lugar de referência onde a cidade
+        nasceu e todas as medidas oficiais de distâncias rodoviárias usam como
+        ponto de partida. Seu nome é, na verdade, Praça Rio Branco e fica ao
+        lado do Porto de Pernambuco. Pode-se dizer que ele se situa no centro
+        histórico da cidade, que é mais conhecido como Recife Antigo por ser a
+        parte onde se iniciou o povoamento da capital pernambucana. A
+        popularização do nome Marco Zero aconteceu desde 1938, devido à
+        instalação do símbolo geográfico na parte central da praça. Ele foi uma
+        doação do Automóvel Clube de Pernambuco.
+      </p>
+      <h2>
+        Principais pontos turísticos ao redor do Marco Zero no Recife Antigo
+      </h2>
+      <br />
+      <ul class="ul-list">
+        <li>Conhecer a arquitetura eclética dos prédios históricos</li>
+        <br />
+        <li>Visitar o Parque das Esculturas de Francisco Brennand</li>
+        <br />
+        <li>Encantar-se no Centro de Artesanato de Pernambuco</li>
+        <br />
+        <li>Visitar as exposições do Museu Cais do Sertão</li>
+        <br />
+      </ul>
+    </div>
+    <footer>
+      <p class="footer-p">Desenvolvido by Lucas de Araújo Silva.</p>
+    </footer>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

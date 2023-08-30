@@ -1,3 +1,35 @@
+.topnav {
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #c2f570;
+  color: black;
+}
+h1,
+h2 {
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 20px;
+  
+}
 body {
   margin: 0;
   padding: 0;
@@ -8,20 +40,17 @@ nav {
   flex-direction: row;
   background-color: antiquewhite;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
   margin-top: 20px;
+  top: 50px;
 }
 .mySlides {
   display: none;
 }
+
 .prev,
 .next {
   cursor: pointer;
@@ -87,16 +116,7 @@ nav {
     opacity: 1;
   }
 }
-h1,
-h2 {
-  text-align: center;
-}
-p {
-  font-size: 20px;
-  text-align: justify;
-  width: 99%;
-  padding-left: 10px;
-}
+
 .footer-p {
   margin: 0;
   padding: 20px;
@@ -108,25 +128,4 @@ p {
 }
 .ul-list {
   font-size: 20px;
-}
-.topnav {
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #c2f570;
-  color: white;
 }

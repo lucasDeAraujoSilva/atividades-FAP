@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="reset.css" />
     <title>Recife</title>
   </head>
-  <header>
-    <div class="topnav">
-        <a class="active" href="#home">Início</a>
-        <a href="#sobre">Marco Zero</a>
-        <!-- <a>Lugares que mais gosto</a> será aplicado na próxima atividade -->
-      </div>
-  </header>
   <body>
+    <div>
+    <header>
+      <div class="topnav">
+          <a class="active" href="#nav-start">Início</a>
+          <a href="#sobre">Marco Zero</a>
+          <!-- <a>Lugares que mais gosto</a> será aplicado na próxima atividade -->
+        </div>
+    </header>
+  </div>
+  <div id="nav-start">
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
@@ -37,8 +40,9 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+  </div>
     <div id="sobre">
-      <h1>Marco Zero</h1>
+      <h1 style="padding-top: 50px;">Marco Zero</h1>
       <p>
         O Marco Zero no Recife Antigo é um dos pontos turísticos mais
         importantes para quem deseja conhecer a capital de Pernambuco. Isso
@@ -80,6 +84,11 @@
     <footer>
       <p class="footer-p">Desenvolvido by Lucas de Araújo Silva.</p>
     </footer>
+
+
+
+
+
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);
